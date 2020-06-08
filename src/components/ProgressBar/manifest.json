@@ -1,0 +1,28 @@
+{
+  "displayName": "Progress Bar",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "props": [
+
+
+    {
+      "name": "CurrentValue",
+      "displayName": "Progress Value",
+      "type": "number",
+      "default": "10"
+    },
+    {
+      "name": "MaxValue",
+      "displayName": "Maximum Value",
+      "type": "number",
+      "default": "100"
+    },
+    {
+      "name": "colorr",
+      "displayName": "Color",
+      "type": "color",
+      "default": "#00A898"
+    }
+  ]
+}
