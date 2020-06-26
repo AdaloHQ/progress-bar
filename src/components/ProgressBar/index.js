@@ -1,29 +1,39 @@
-import React, { Component } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
-import { ProgressBar, Colors } from 'react-native-paper';
+import React, { Component } from "react";
+import { Text, View, StyleSheet } from "react-native";
+import { ProgressBar as PaperProgressBar, Colors } from "react-native-paper";
 
-class ProgressBBar extends Component {
+class ProgressBar extends Component {
+  render() {
+    const {
+      backgroundColor,
+      color,
+      currentValue,
+      maxValue,
+      _height,
+    } = this.props;
 
-	render() {
-		const { colorr,  CurrentValue, MaxValue} = this.props
-		if(MaxValue <= 0){
-			var x = 1
-		}
-		else {
-			var x = MaxValue
-		}
-		return (
-		 <ProgressBar progress={CurrentValue/x} color={colorr} backgroundColor ={Colors.red800} />
-		)
-	}
+    if (maxValue <= 0) {
+      var x = 1;
+    } else {
+      var x = maxValue;
+    }
+    return (
+      <PaperProgressBar
+        progress={currentValue / x}
+        color={color}
+        backgroundColor={backgroundColor}
+        style={{ height: _height, backgroundColor }}
+      />
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-	wrapper: {
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-	}
-})
+  wrapper: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
-export default ProgressBBar
+export default ProgressBar;
