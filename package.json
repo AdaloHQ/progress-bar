@@ -21,18 +21,8 @@
     "react-dom": ">=16",
     "react-native": "*"
   },
-  "adalo": {
-    "logo": "./logo.png",
-    "displayName": "Progress Bar",
-    "components": [
-      {
-        "name": "ProgressBar",
-        "manifest": "./src/components/ProgressBar/manifest.json"
-      }
-    ]
-  },
   "devDependencies": {
-    "@adalo/cli": "^0.0.39",
+    "@adalo/cli": "^0.0.59",
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.0.0",

@@ -1,0 +1,12 @@
+{
+  "author": "Adalo",
+  "description": "Display progress to a user such as number of tasks completed.",
+  "logo": "./logo.png",
+  "displayName": "Progress Bar",
+  "components": [
+    {
+      "name": "ProgressBar",
+      "manifest": "./src/components/ProgressBar/manifest.json"
+    }
+  ]
+}
