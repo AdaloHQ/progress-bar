@@ -1,5 +1,5 @@
 {
-  "displayName": "Progress Bar",
+  "displayName": "Progress Bar (Legacy)",
   "defaultWidth": 375,
   "defaultHeight": 4,
   "components": "./index.js",
@@ -22,13 +22,13 @@
       "name": "color",
       "displayName": "Color",
       "type": "color",
-      "default": "#00A898"
+      "default": "@primary"
     },
     {
       "name": "backgroundColor",
       "displayName": "Background Color",
       "type": "color",
-      "default": "#00A89840"
+      "default": "@primaryLight"
     }
   ]
 }
